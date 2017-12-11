@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dice">
+   <children>
+      <SplitPane dividerPositions="0.38961038961038963" layoutX="1125.0" layoutY="379.0" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="38.0" prefWidth="125.0" text="Players" underline="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <VBox layoutX="10.0" layoutY="95.0" prefHeight="117.0" prefWidth="125.0">
+                     <children>
+                        <Label text="Player 1" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="125.0" text="                  Money:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="125.0" text="            Properties:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="126.0" text="          Monopolies:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="38.0" prefWidth="141.0" text="Position on board:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="124.0" text="                   In Jail:" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="135.0" layoutY="117.0" prefHeight="95.0" prefWidth="125.0">
+                     <children>
+                        <Label fx:id="player1_money" prefHeight="21.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_properties" prefHeight="18.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_monopolies" prefHeight="20.0" prefWidth="126.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_currentPos" prefHeight="38.0" prefWidth="141.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_inJail" prefHeight="22.0" prefWidth="124.0" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="9.0" layoutY="212.0" prefHeight="117.0" prefWidth="125.0">
+                     <children>
+                        <Label text="Player 2" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="125.0" text="                  Money:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="125.0" text="            Properties:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="126.0" text="          Monopolies:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="38.0" prefWidth="141.0" text="Position on board:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="124.0" text="                   In Jail:" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="134.0" layoutY="234.0" prefHeight="95.0" prefWidth="125.0">
+                     <children>
+                        <Label fx:id="player2_money" prefHeight="21.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_properties" prefHeight="18.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_monopolies" prefHeight="20.0" prefWidth="126.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_currentPos" prefHeight="38.0" prefWidth="141.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_inJail" prefHeight="22.0" prefWidth="124.0" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="329.0" prefHeight="117.0" prefWidth="125.0">
+                     <children>
+                        <Label text="Player 3" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="125.0" text="                  Money:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="125.0" text="            Properties:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="126.0" text="          Monopolies:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="38.0" prefWidth="141.0" text="Position on board:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="124.0" text="                   In Jail:" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="135.0" layoutY="351.0" prefHeight="95.0" prefWidth="125.0">
+                     <children>
+                        <Label fx:id="player3_money" prefHeight="21.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_properties" prefHeight="18.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_monopolies" prefHeight="20.0" prefWidth="126.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_currentPos" prefHeight="38.0" prefWidth="141.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_inJail" prefHeight="22.0" prefWidth="124.0" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="9.0" layoutY="446.0" prefHeight="117.0" prefWidth="125.0">
+                     <children>
+                        <Label text="Player 4" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="125.0" text="                  Money:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="125.0" text="            Properties:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="126.0" text="          Monopolies:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="38.0" prefWidth="141.0" text="Position on board:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="124.0" text="                   In Jail:" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="134.0" layoutY="468.0" prefHeight="95.0" prefWidth="125.0">
+                     <children>
+                        <Label fx:id="player4_money" prefHeight="21.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_properties" prefHeight="18.0" prefWidth="125.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_monopolies" prefHeight="20.0" prefWidth="126.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_currentPos" prefHeight="38.0" prefWidth="141.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_inJail" prefHeight="22.0" prefWidth="124.0" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="30.0" layoutY="60.0">
+                     <image>
+                        <Image url="@board.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="171.0" layoutY="690.0" spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="30.0">
+                     <children>
+                        <Button fx:id="rollDiceButton" mnemonicParsing="false" onAction="#rollDice" text="Roll Dice" />
+                        <Button mnemonicParsing="false" text="Develop Property" />
+                        <Button mnemonicParsing="false" text="Mortgage Property" />
+                        <Button mnemonicParsing="false" text="End Turn" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="36.0" layoutY="681.0" spacing="2.0">
+                     <children>
+                        <Label fx:id="currentPlayer" text="Label">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="'s Turn:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="146.0" layoutY="581.0">
+                     <image>
+                        <Image url="@house.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="13.0" layoutY="35.0" text="Key:" underline="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="53.0" layoutY="36.0" spacing="19.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../../out/production/pa3/player1.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 1" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@player2.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 2" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@player3.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 3" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@player4.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 4" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@hotel.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Hotel" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@house.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="House" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <MenuBar maxWidth="-Infinity" prefHeight="5.0" prefWidth="1080.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

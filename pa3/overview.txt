@@ -1,0 +1,20 @@
+Team members:
+Elizabeth Andrews
+Michael Dickensheets
+Aaron McCarthy
+Tim Osen
+
+Design problems, issues, etc:
+	Writing the actual code for the project was not very difficult. The real challenge for this assignment came from figuring out how to effectively use Git and JUnit. Some of the team members did not have very much experience using Git, so they had to do a little extra work figuring out how that worked in the beginning. Later, we struggled with getting IDEs to pull from Git correctly and compile well using JUnit. Sometimes strange Git errors would happen that we couldn’t figure out how to fix, except by re-cloning the remote repository. Overall, this assignment gave us more familiarity using GitHub with a team, and introduced us to using JUnit on a project. 
+
+Specific contributions:
+	Elizabeth Andrews wrote the magnitude and dot methods in the Vector3D.java file. She also wrote the test methods testDot, testMagnitude, and testSubtract. Elizabeth also wrote the overview.txt file and created issues on GitHub to help team members keep track of what was still left to work on.
+	Michael got the Vector3DTest.java file set up to use JUnit. He also wrote the test methods testScale, testAdd, and testEquals. He also wrote the equality method in Vector3D.java. Michael reorganized the file structure of the project to match what was specified in the rubric. 
+	Aaron wrote the majority of the Vector3D.java class, including the negate, subtract, add, and scale methods, as well as the Vector3D constructor. He also set up the original repository we were using before we got the invite for the team repository set up by the TA.
+	Tim worked mostly on writing the JUnit tests for the Vector3D methods. He wrote testNegate, updated testEquals, wrote testToString, and wrote the vectorToString method in the Vector3D class. He also refactored the test method names to match what was given in the lab rubric and added comments to the project.
+
+Time in minutes spent by each team member:
+	Elizabeth: 350 minutes
+	Michael: 240 minutes
+	Aaron: 180 minutes
+	Tim: 330 minutes

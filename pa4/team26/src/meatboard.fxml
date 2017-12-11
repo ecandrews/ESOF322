@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MonopolyController">
+   <children>
+      <SplitPane dividerPositions="0.38961038961038963" layoutX="1125.0" layoutY="379.0" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="72.0" prefHeight="164.0" prefWidth="191.0">
+                     <children>
+                        <Label text="Player 1" underline="true">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                         Money:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                   Properties:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                       Position:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                          In Jail:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="205.0" layoutY="107.0" prefHeight="125.0" prefWidth="205.0">
+                     <children>
+                        <Label fx:id="player1_money" prefHeight="25.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_properties" prefHeight="49.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_currentPos" prefHeight="43.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1_inJail" prefHeight="37.0" prefWidth="205.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="8.0" layoutY="232.0" prefHeight="164.0" prefWidth="191.0">
+                     <children>
+                        <Label text="Player 2" underline="true">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                         Money:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                   Properties:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                       Position:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                          In Jail:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="203.0" layoutY="267.0" prefHeight="125.0" prefWidth="205.0">
+                     <children>
+                        <Label fx:id="player2_money" prefHeight="25.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_properties" prefHeight="49.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_currentPos" prefHeight="43.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2_inJail" prefHeight="37.0" prefWidth="205.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="6.0" layoutY="392.0" prefHeight="164.0" prefWidth="191.0">
+                     <children>
+                        <Label text="Player 3" underline="true">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                         Money:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                   Properties:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                       Position:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                          In Jail:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="201.0" layoutY="427.0" prefHeight="125.0" prefWidth="205.0">
+                     <children>
+                        <Label fx:id="player3_money" prefHeight="25.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_properties" prefHeight="49.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_currentPos" prefHeight="43.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player3_inJail" prefHeight="37.0" prefWidth="205.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator layoutY="71.0" prefHeight="0.0" prefWidth="416.0" />
+                  <VBox layoutX="4.0" layoutY="552.0" prefHeight="164.0" prefWidth="191.0">
+                     <children>
+                        <Label text="Player 4" underline="true">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                         Money:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                   Properties:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                       Position:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="192.0" text="                          In Jail:" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="199.0" layoutY="587.0" prefHeight="125.0" prefWidth="205.0">
+                     <children>
+                        <Label fx:id="player4_money" prefHeight="25.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_properties" prefHeight="49.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_currentPos" prefHeight="43.0" prefWidth="205.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player4_inJail" prefHeight="37.0" prefWidth="205.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator layoutX="-2.0" layoutY="235.0" prefHeight="3.0" prefWidth="416.0" />
+                  <Separator layoutX="3.0" layoutY="395.0" prefHeight="3.0" prefWidth="416.0" />
+                  <Separator layoutX="-3.0" layoutY="555.0" prefHeight="3.0" prefWidth="443.0" />
+                  <ImageView fitHeight="60.0" fitWidth="291.0" layoutX="60.0" layoutY="5.0">
+                     <image>
+                        <Image url="@images/meatlogo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="30.0" layoutY="60.0">
+                     <image>
+                        <Image url="@images/meatboard.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="171.0" layoutY="690.0" prefHeight="27.0" prefWidth="608.0" spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="22.0">
+                     <children>
+                        <Button fx:id="rollbtn" mnemonicParsing="false" onAction="#movePlayer" prefHeight="27.0" prefWidth="50.0" text="Roll" />
+                        <Button fx:id="buyPropbtn" mnemonicParsing="false" onAction="#buyProperty" prefHeight="27.0" prefWidth="58.0" text="Buy" />
+                        <Button fx:id="payBailbtn" mnemonicParsing="false" onAction="#payBail" prefHeight="27.0" prefWidth="83.0" text="Pay Bail" />
+                        <Button fx:id="manPropsbtn" mnemonicParsing="false" onAction="#manageProps" prefHeight="27.0" prefWidth="144.0" text="Manage Properties" />
+
+                        <Button fx:id="endTurn" mnemonicParsing="false" onAction="#endTurn" text="End Turn" />
+                        <Button fx:id="iceChestbtn" mnemonicParsing="false" onAction="#iceChest" prefHeight="27.0" prefWidth="81.0" text="Ice Chest" />
+                        <Button fx:id="mysteryMeatbtn" mnemonicParsing="false" onAction="#mysteryMeat" prefHeight="27.0" prefWidth="81.0" text="Chance" />
+
+                     </children>
+                  </HBox>
+                  <HBox layoutX="36.0" layoutY="681.0" spacing="2.0" />
+                  <ImageView fx:id="house1" fitHeight="16.0" fitWidth="16.0" layoutX="518.0" layoutY="581.0" visible="false">
+                     <image>
+                        <Image url="@images/house.jpg" />
+                     </image>
+                  </ImageView>
+
+                  <Label layoutX="13.0" layoutY="35.0" text="Key:" underline="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="53.0" layoutY="36.0" spacing="19.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/player1.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 1" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/player2.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 2" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/player3.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 3" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/player4.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Player 4" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/hotel.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Hotel" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@images/house.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="House" />
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="p2token" fitHeight="16.0" fitWidth="16.0" layoutX="591.0" layoutY="608.0">
+                     <image>
+                        <Image url="@images/player2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="p3token" fitHeight="16.0" fitWidth="16.0" layoutX="575.0" layoutY="624.0">
+                     <image>
+                        <Image url="@images/player3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="p4token" fitHeight="16.0" fitWidth="16.0" layoutX="589.0" layoutY="626.0">
+                     <image>
+                        <Image url="@images/player4.png" />
+                     </image>
+                  </ImageView>
+
+                  <ImageView fx:id="p1token" fitHeight="16.0" fitWidth="16.0" layoutX="572.0" layoutY="608.0">
+                     <image>
+                        <Image url="@images/player1.png" />
+                     </image>
+                  </ImageView>
+
+                  <ImageView fx:id="house3" fitHeight="16.0" fitWidth="16.0" layoutX="420.0" layoutY="581.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house6" fitHeight="16.0" fitWidth="16.0" layoutX="273.0" layoutY="581.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house8" fitHeight="16.0" fitWidth="16.0" layoutX="175.0" layoutY="581.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house9" fitHeight="16.0" fitWidth="16.0" layoutX="127.0" layoutY="581.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house11" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="546.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house13" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="450.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house14" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="402.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house16" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="303.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house18" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="204.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house19" fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="157.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house21" fitHeight="16.0" fitWidth="16.0" layoutX="127.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house23" fitHeight="16.0" fitWidth="16.0" layoutX="225.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house24" fitHeight="16.0" fitWidth="16.0" layoutX="273.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house26" fitHeight="16.0" fitWidth="16.0" layoutX="371.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house27" fitHeight="16.0" fitWidth="16.0" layoutX="420.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house29" fitHeight="16.0" fitWidth="16.0" layoutX="518.0" layoutY="123.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house31" fitHeight="16.0" fitWidth="16.0" layoutX="551.0" layoutY="157.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house32" fitHeight="16.0" fitWidth="16.0" layoutX="551.0" layoutY="204.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house34" fitHeight="16.0" fitWidth="16.0" layoutX="551.0" layoutY="303.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house37" fitHeight="16.0" fitWidth="16.0" layoutX="551.0" layoutY="450.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="house39" fitHeight="16.0" fitWidth="16.0" layoutX="551.0" layoutY="546.0" visible="false">
+                     <image>
+                        <Image url="@images/house1.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
